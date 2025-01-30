@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mi primera página web </title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Color de fondo suave */
+            color: #333;
+        }
+        header {
+            background: linear-gradient(to right, #8B4513, #A0522D); /* Gradiente café */
+            color: white;
+            text-align: center;
+            padding: 30px;
+            font-size: 32px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .container {
+            padding: 30px;
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            border-radius: 15px; 
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            color: #8B4513; /* Café oscuro */
+            border-bottom: 2px solid #A0522D; 
+            padding-bottom: 10px;
+        }
+        .video {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .pdf {
+            margin: 30px 0;
+        }
+        .button {
+            background-color: #8B4513; /* Café oscuro */
+            color: white;
+            border: none;
+            padding: 12px 20px; 
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px; 
+            border-radius: 8px; 
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease; 
+        }
+        .button:hover {
+            background-color: #A0522D; /* Café claro al pasar el ratón */
+            transform: scale(1.05); 
+        }
+        footer {
+            background-color: #333; /* Negro */
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px; 
+        }
+        img {
+            max-width: 100%;
+            height: auto; 
+            border-radius: 10px; 
+        }
+        .highlight {
+            background-color: #e1f5fe; /* Celeste claro */
+            padding: 15px;
+            border-radius: 8px; /* Bordes redondeados para resaltar secciones */
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Mi pagina web</h1>
+</header>
+<div class="container">
+    <h2> Holi </h2>
+    <p>Ando aqui aprendiendo a hacer esta página web, si no puse videos es por que el youtube en el laboratorio está bloqueado :( jeje</p>
+
+    <div class="highlight">
+        <!-- Enlace con hipervínculo -->
+        <a href="https://79nzel-jos0ricardo-villavicencio0barreno.shinyapps.io/publicarshiny/" target="_blank" class="button">Ir a Ejemplo</a>
+    </div>
+
+    <div class="video highlight">
+        <h2>Video Informativo</h2>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/_N5YIGT_R58?si=eDvSxQ-Ua9dOzW63" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div class="pdf highlight">
+        <h2>Documentos PDF</h2>
+        <a href="documento.pdf" target="_blank" class="button">Descargar PDF</a>
+        <h3>Ver PDF BD</h3>
+        <embed src="documento.pdf" type="application/pdf" width="100%" height="500">
+    </div>
+
+    <table border="0" width="100%">
+        <tr>
+            <!-- Imagen en el lado izquierdo -->
+            <td align="center" width="50%">
+                <img src="imagen1.jpg" alt="Imagen Descriptiva">
+                <p>De pelos</p> <!-- Añadido texto descriptivo -->
+            </td>
+
+            <!-- Video en el lado derecho -->
+            <td align="center" width="50%">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/K7aQgWWc8uE?si=OT7uhnwTzWYxXLSV" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                <p>Descripción del video.</p> <!-- Añadido texto descriptivo -->
+            </td>
+        </tr>
+    </table>
+
+    <!-- Nueva sección para varias imágenes -->
+    <h2>Galería de Imágenes</h2>
+    <div class="highlight">
+        <table border="0" width="100%">
+          <tr>
+              <td align="center" width="33%">
+                  <img src="imagen2.jpg" alt="Imagen Galería 1">
+                  <p>Piolin del infierno</p>
+              </td>
+              <td align="center" width="33%">
+                  <img src="imagen3.jpg" alt="Imagen Galería 2">
+                  <p>Homero chino</p>
+              </td>
+              <td align="center" width="33%">
+                  <img src="imagen4.jpg" alt="Imagen Galería 3">
+                  <p>Criko Messi</p>
+              </td>
+          </tr>
+      </table>
+    </div>
+
+</div>
+<footer>
+    <p>&copy; 2025 Página Informativa. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>
+
